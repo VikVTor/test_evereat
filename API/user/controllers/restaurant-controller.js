@@ -98,7 +98,7 @@ const getOne = async (req, res, next) => {
                 *,
                 dish (
                     *,
-                    variants (*),
+                    variant (*),
                     extra (*)
                 )
             ),
