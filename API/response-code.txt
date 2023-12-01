@@ -1,0 +1,11 @@
+0000 - errore sconosciuto
+0001 - errore query mysql
+0002 - errore connessione con mysql
+0003 - mancano dati nella richiesta
+0004 - login fallito
+0005 - risorsa non trovata
+0006 - non si hanno i permessi
+0007
+0008
+0009
+0010 - richiesta completata con successo
