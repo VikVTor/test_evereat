@@ -107,6 +107,8 @@ const getOne = async (req, res, next) => {
         `)
         .eq('id_restaurant', id_restaurant);
 
+    console.error(error ? error : "");
+
     if (error) return next(new ServerError(StatusCodes.INTERNAL_SERVER_ERROR, error));
     return res.status(StatusCodes.OK).json({message: ReasonPhrases.OK, content: data});
 }
