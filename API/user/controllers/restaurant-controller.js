@@ -106,6 +106,9 @@ const getOne = async (req, res, next) => {
             deliver_options (*)
         `)
         .eq('id_restaurant', id_restaurant);
+
+    if (error) return next(new ServerError(StatusCodes.INTERNAL_SERVER_ERROR, error));
+    return res.status(StatusCodes.OK).json({message: ReasonPhrases.OK, content: data});
 }
 
 const postReview = async (req, res, next) => {
